@@ -1,0 +1,24 @@
+<body class="centered-form">
+    <div class="centered-form__room">
+
+        <div class="form-field">
+            <h3>Hello!  {{user.name}} </h3>
+            <h3>Select a Chatroom</h3>
+        </div>
+
+        <div class="form-field">
+            <form action="/chat">
+                <input type="hidden" name="name" value="{{user.name}}">
+                Chat Room List:
+                <select name="room">
+                    <option value="reactjs">ReactJS</option>
+                    <option value="nodejs">NodeJS</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+                <button>Send</button>
+            </form>
+        </div>
+        </div>
+
+</body>

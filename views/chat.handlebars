@@ -1,0 +1,34 @@
+﻿<body class="chat">
+
+    <div class="chat__sidebar">
+        <h3>People</h3>
+        <div id="users"></div>
+    </div>
+
+    <div class="chat__main">
+        <ol id="messages" class="chat__messages"></ol>
+
+        <div class="chat__footer">
+            <form id="message-form">
+                <input type="hidden" name="username" value="{{user.name}}"/>
+                <input name="message" type="text" placeholder="input the message" autofocus autocomplete="off" />
+                <button>Send</button>
+            </form>
+
+            <button id="send-location">Send location</button>
+            <input type="file" id="my-file" />
+
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/deparam.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="chat.js"></script>
+
+
+
+</body>
+

@@ -1,0 +1,27 @@
+{
+  "name": "chatio",
+  "version": "1.0.0",
+  "description": "Simple chat app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^2.0.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "moment": "^2.21.0",
+    "mongoose": "^5.2.12",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-google-oauth20": "^1.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.4"
+  }
+}
